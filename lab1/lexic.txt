@@ -1,0 +1,32 @@
+-Uppercase and lowercase letters of the english alphabet
+-Digits
+
+Special symbols:
+	
+	operators: +, -, *, /, =+= (incremention), =-=(decremention),
+			cmp (for integers), like (for strings)
+	
+	separators: ., ;, space
+
+	reserved words: int, str, type, say, loop, stoploop, check, recheck,
+			    fixed, charX, get, put, start, end
+
+
+Identifiers:
+
+	identifier = letter {( letter | digit )}
+	letter = "a" | ... | "z" | "A" | ... | "Z"
+	digit = "0" | ... | "9"
+
+int = ["+" | "-"] digit {digit}
+digit = "0" | "1" | ... | "9"
+
+char = letter | digit
+
+string = " " " char {string} " " "
+char = letter | digit
+letter = "a" | ... | "z" | "A" | ... | "Z"
+digit = "0" | ... | "9"
+
+
+	
