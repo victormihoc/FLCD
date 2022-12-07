@@ -1,0 +1,9 @@
+a type str .
+b type str .
+result type ans .
+
+result = a like b .
+
+say " y " .
+
+say " n " .

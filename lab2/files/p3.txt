@@ -1,0 +1,17 @@
+n type int .
+v type arr .
+s type int .
+i type int .
+
+i = 0 .
+n = 15 .
+
+loop n .
+
+s =+= v[i] .
+i = i ++.
+cmp i n .
+
+say s .
+
+stoploop .
