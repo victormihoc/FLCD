@@ -1,0 +1,5 @@
+p q r s
+0 1
+p q 0;q r 1;r s 0
+p
+s
