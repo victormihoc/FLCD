@@ -1,0 +1,74 @@
+state: q index: 0
+WS: []
+IS: ['S']
+///EXPAND///
+state: q index: 0
+WS: [('S', 0)]
+IS: ['a', 'S', 'b', 'S']
+///ADVANCE///
+state: q index: 1
+WS: [('S', 0), 'a']
+IS: ['S', 'b', 'S']
+///EXPAND///
+state: q index: 1
+WS: [('S', 0), 'a', ('S', 0)]
+IS: ['a', 'S', 'b', 'S', 'b', 'S']
+///MOMENTARY INSUCCESS///
+state: b index: 1
+WS: [('S', 0), 'a', ('S', 0)]
+IS: ['a', 'S', 'b', 'S', 'b', 'S']
+///ANOTHER TRY///
+state: q index: 1
+WS: [('S', 0), 'a', ('S', 1)]
+IS: ['a', 'S', 'b', 'S']
+///MOMENTARY INSUCCESS///
+state: b index: 1
+WS: [('S', 0), 'a', ('S', 1)]
+IS: ['a', 'S', 'b', 'S']
+///ANOTHER TRY///
+state: q index: 1
+WS: [('S', 0), 'a', ('S', 2)]
+IS: ['A', 'b', 'S']
+///EXPAND///
+state: q index: 1
+WS: [('S', 0), 'a', ('S', 2), ('A', 0)]
+IS: ['c', 'b', 'S']
+///ADVANCE///
+state: q index: 2
+WS: [('S', 0), 'a', ('S', 2), ('A', 0), 'c']
+IS: ['b', 'S']
+///ADVANCE///
+state: q index: 3
+WS: [('S', 0), 'a', ('S', 2), ('A', 0), 'c', 'b']
+IS: ['S']
+///EXPAND///
+state: q index: 3
+WS: [('S', 0), 'a', ('S', 2), ('A', 0), 'c', 'b', ('S', 0)]
+IS: ['a', 'S', 'b', 'S']
+///MOMENTARY INSUCCESS///
+state: b index: 3
+WS: [('S', 0), 'a', ('S', 2), ('A', 0), 'c', 'b', ('S', 0)]
+IS: ['a', 'S', 'b', 'S']
+///ANOTHER TRY///
+state: q index: 3
+WS: [('S', 0), 'a', ('S', 2), ('A', 0), 'c', 'b', ('S', 1)]
+IS: ['a', 'S']
+///MOMENTARY INSUCCESS///
+state: b index: 3
+WS: [('S', 0), 'a', ('S', 2), ('A', 0), 'c', 'b', ('S', 1)]
+IS: ['a', 'S']
+///ANOTHER TRY///
+state: q index: 3
+WS: [('S', 0), 'a', ('S', 2), ('A', 0), 'c', 'b', ('S', 2)]
+IS: ['A']
+///EXPAND///
+state: q index: 3
+WS: [('S', 0), 'a', ('S', 2), ('A', 0), 'c', 'b', ('S', 2), ('A', 0)]
+IS: ['c']
+///ADVANCE///
+state: q index: 4
+WS: [('S', 0), 'a', ('S', 2), ('A', 0), 'c', 'b', ('S', 2), ('A', 0), 'c']
+IS: []
+///SUCCESS///
+Sequence is accepted!
+Working stack: [('S', 0), 'a', ('S', 2), ('A', 0), 'c', 'b', ('S', 2), ('A', 0), 'c']
