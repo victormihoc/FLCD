@@ -1,6 +1,0 @@
-S A
-a b c
-S
-S -> a A | a B
-A -> A B
-B - > b
