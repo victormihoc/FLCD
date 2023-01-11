@@ -1,6 +1,0 @@
-For the Symbol Table I used a hash table with chaining and for the hash function ascii sum divided by capacity
-    - put, get, search
-
-Scanner: parse every line of the file and put it in the right collection
-    -operators, separators and keywords appear in pif file with value -1
-    -identifier and constants appear in pif with the position from symbol table

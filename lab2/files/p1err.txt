@@ -1,5 +1,0 @@
-name type str.
-
-name = "p1err". //no spaces
-
-cmp name "pierre" ?
