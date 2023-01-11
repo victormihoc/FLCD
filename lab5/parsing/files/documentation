@@ -1,0 +1,12 @@
+Recursive descendant parser
+
+    -takes as input a grammar then writes to a file the result of the recursive descendant method which takes as input a sequence
+    -the recursive descendant method uses class Config, which has 2 stacks, the starting symbol and the state(initially normal)
+    -the algorithm checks the state of the input stack and periodically checks the head of it and if the entire sequence was parsed
+    -based on the result, a method is called:
+        expand - when we have a non-terminal we pop the first production of it and push it to the input stack
+        advance - if the head is a terminal and matches the current symbol of the input, we push it to the working stack and increment the read part
+        momentary success - head of input stack is a terminal ≠ current symbol from input, the state is set to back
+        back - head of working stack is a terminal, pop it from the working stack and push it to the input stack decrementing the read part
+        success - input stack is empty and read part = length of the sequence, set the state to final
+        another try - when head of working stack is a non-terminal, pops the head of working stack and checks its productions and based on the state of this it modifies the input stack
